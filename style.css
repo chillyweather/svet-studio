@@ -1,0 +1,35 @@
+@font-face {
+  font-family: MiriamLibre;
+  font-weight: 400;
+  src: url(./vendor/fonts/MiriamLibre-Regular.woff);
+}
+
+@font-face {
+  font-family: MiriamLibre-Bold;
+  font-weight: 700;
+  src: url(./vendor/fonts/MiriamLibre-Bold.woff);
+}
+
+.page {
+  margin: 0;
+}
+
+.main {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 35%;
+  filter: drop-shadow(0 0 0.5rem #d70003);
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    width: 50%;
+  }
+}
