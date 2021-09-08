@@ -1,7 +1,7 @@
 let testAlert = document.querySelector(".logo");
 
 function showAlert() {
-  alert("Soon!!!!!");
+  alert("Now!!!!!");
 }
 
 testAlert.addEventListener('click', showAlert);
