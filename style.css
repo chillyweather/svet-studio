@@ -21,21 +21,53 @@
   src: url(./vendor/fonts/Urbanist-ExtraLight.woff2);
 }
 
-*/ .page {
+.page {
   background-color: #f5f5f5;
 }
 
 .page-container {
   margin: auto;
   max-width: 1100px;
-  /* border: brown solid 1px; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: brown solid 1px;
+}
+
+.logo {
+  height: 60px;
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 10px 10px;
+  padding: 40px 40px 10px;
+}
+
+.email-container {
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  font-family: Urbanist, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.email-popup-open-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgb(83, 187, 201);
+  background-image: url(./img/email.svg);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  margin-left: 10px;
 }
 
 .nav-items {
@@ -48,14 +80,14 @@
   margin-left: 50px;
   font-family: Urbanist, Arial, Helvetica, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 14px;
 }
 
-.main {
-}
-
-.logo {
-  height: 60px;
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
 }
 
 /* @media screen and (max-width: 900px) {
